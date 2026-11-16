@@ -172,6 +172,26 @@
     letter-spacing: 0.02em;
     font-variant-numeric: tabular-nums;
   }
+  .item .cite {
+    display: block;
+    margin-top: 4px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+  }
+  .item .doi {
+    display: inline-block;
+    margin-top: 4px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    overflow-wrap: anywhere;
+  }
+  .item .doi:hover { text-decoration-thickness: 2px; }
+  .item .doi:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   ul.plain { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 7px; }
   ul.plain li { position: relative; padding-left: 15px; font-size: 14px; }
   ul.plain li::before {
@@ -288,9 +308,13 @@
           <div class="d">로봇 기반 병합 견인–신전 중재가 만성 경추통 환자의 통증, 근긴장도, 운동범위 및 기능장애에 미치는 영향</div>
         </div>
         <div class="item">
-          <div class="t">대한물리치료학회지(JKPT) 투고</div>
-          <div class="when">심사 중</div>
-          <div class="d">석사학위논문 기반 원저. 수정 후 재심사 단계.</div>
+          <div class="t">대한물리치료학회지(JKPT) 논문 게재</div>
+          <div class="when">2026.10</div>
+          <div class="d">
+            Effects of Robotic-based Combined Cervical Traction-Extension Intervention on Pain, Muscle Tone, Range of Motion, and Disability in Patients with Chronic Neck Pain
+            <span class="cite">J Kor Phys Ther 2026;38(5):350-356</span>
+            <a class="doi" href="https://doi.org/10.18857/jkpt.2026.38.5.350" target="_blank" rel="noopener">doi.org/10.18857/jkpt.2026.38.5.350</a>
+          </div>
         </div>
       </div>
     </section>
@@ -453,7 +477,7 @@
     </section>
 
   </main>
-  <footer>최종 수정 2026.10.27</footer>
+  <footer>최종 수정 2026.11.16</footer>
 </div>
 
 <script>
